@@ -1,6 +1,10 @@
 # 605.787 Front End Web App Development
 
+This repo contains all source files for assignments and class sample code.
+
 ## Part I: HTML5, CSS, and Javascript
+
+### [HTML5, CSS, and Javascript Sample Code](https://github.com/jhu-ep-coursera/fullstack-course4)
 
 ### Module 2 (Due: 09/10/24)
 - [Assignment 2: Description](https://ychaikin.github.io/jhu-ajax-course/Module2)
@@ -19,6 +23,8 @@
 - [Assignment 5: Implementation](rmagbuh1_assignment_5/)
 
 ## Part II: Angular JS
+
+### [Angular JS Sample Code](https://github.com/jhu-ep-coursera/fullstack-course5)
 
 ### Module 6 (Due: 10/08/24)
 - [Assignment 6: Description](https://ychaikin.github.io/jhu-ajax-course/Module6)
