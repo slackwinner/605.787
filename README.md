@@ -8,7 +8,7 @@ This repo contains all source files for assignments and class sample code.
 
 ### Module 2 (Due: 09/10/24)
 - [Assignment 2: Description](https://ychaikin.github.io/jhu-ajax-course/Module2)
-- [Assignment 2: Implementation](rmagbuh1_mod2_solution/)
+- [Assignment 2: Implementation](rmagbuh1_mod2_solution/index.html)
 
 ### Module 3 (Due: 09/17/24)
 - [Assignment 3: Description](https://ychaikin.github.io/jhu-ajax-course/Module3)
