@@ -1,12 +1,19 @@
 /********** Base styles **********/
 * {
   box-sizing: border-box;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
-.reg-header{
+.reg-header {
     text-align: center;
     font-size: xx-large
+}
+
+.mobile-header {
+  text-align: left;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 10px;
 }
 
 .row {
@@ -20,32 +27,42 @@
     margin: 10px;
 }
 
-.reg-title {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    margin: 0px;
-    text-align: center;
-    font-size: large;
-    border: 1px solid black;
-    padding: 2px 20px;
+.reg-title{
+  position: absolute;
+  right: 0px;
+  margin-top: 0px;
+  padding: 2px 15px;
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+  border: 1px solid black;
 }
 
-.reg-title-box-a {
+.mobile-title {
+  margin-top: 0px;
+  padding: 2px 15px;
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.title-box-a {
     background-color: lightgoldenrodyellow;
 }
 
-.reg-title-box-b {
+.title-box-b {
     background-color: lightgreen;
 }
 
-.reg-title-box-c {
+.title-box-c {
     background-color: lightcoral;
 }
 
 .description {
-    margin-top: 30px;
-    padding: 10px;
+    margin-top: 28px;
+    padding: 8px;
     height: 128px;
     overflow: hidden;
 }
@@ -53,6 +70,7 @@
 .description:hover {
   overflow-x: hidden;
   overflow-y: scroll;
+
 }
 
 /********** Desktop devices only **********/
@@ -61,6 +79,11 @@
     float: left;
     width: 33.33%;
   }
+
+  .mobile-header, .mobile-title {
+    display: none;
+  }
+
 }
 
 /********** Tablet devices only **********/
@@ -75,6 +98,10 @@
   .col-md-12 {
     width: 100%;
   }
+
+  .mobile-header, .mobile-title {
+    display: none;
+  }
 }
 
 /********** Mobile devices only **********/
@@ -82,5 +109,13 @@
     .col-sm-12 {
       float: left;
       width: 100%;
+    }
+
+    .reg-header, .reg-title{
+      display: none;
+    }
+
+    .description {
+      margin-top: 0px;
     }
   }
