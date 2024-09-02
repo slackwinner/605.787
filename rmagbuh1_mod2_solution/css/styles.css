@@ -62,8 +62,9 @@
 
 .description {
     margin-top: 28px;
-    padding: 8px;
-    height: 124px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 134px;
     overflow: hidden;
 }
 
