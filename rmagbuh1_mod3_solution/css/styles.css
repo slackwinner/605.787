@@ -1,0 +1,42 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+/** Nav Bar Section **/
+#navbar-brand-name h1 { /* Company Name */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 0.75;
+}
+
+#nav-list a:hover {
+    background: #E7E7E7;
+  }
+
+#nav-list a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    background-color: #FF5733;
+    margin-bottom: 1px;
+  }
+
+/** Content Body Section **/
+.content-box {
+    border: 1px solid black;
+    background-color: lightgray;
+    margin: 10px;
+    text-align: center;
+}
+
+.description {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+
+
