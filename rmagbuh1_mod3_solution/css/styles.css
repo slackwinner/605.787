@@ -1,0 +1,121 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.reg-header {
+    text-align: center;
+    font-size: xx-large
+}
+
+.mobile-header {
+  text-align: left;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 10px;
+}
+
+.row {
+    width: 100%;
+}
+
+.content-box {
+    position: relative;
+    border: 1px solid black;
+    background-color: lightblue;
+    margin: 10px;
+}
+
+.reg-title{
+  position: absolute;
+  right: 0px;
+  margin-top: 0px;
+  padding: 2px 15px;
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+.mobile-title {
+  margin-top: 0px;
+  padding: 2px 15px;
+  text-align: center;
+  font-size: medium;
+  font-weight: bold;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.title-box-a {
+    background-color: lightgoldenrodyellow;
+}
+
+.title-box-b {
+    background-color: lightgreen;
+}
+
+.title-box-c {
+    background-color: lightcoral;
+}
+
+.description {
+    margin-top: 28px;
+    padding: 8px;
+    height: 124px;
+    overflow: hidden;
+}
+
+.description:hover {
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+}
+
+/********** Desktop devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 33.33%;
+  }
+
+  .mobile-header, .mobile-title {
+    display: none;
+  }
+
+}
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+   .col-md-6, .col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
+  .mobile-header, .mobile-title {
+    display: none;
+  }
+}
+
+/********** Mobile devices only **********/
+@media (max-width: 767px) {
+    .col-sm-12 {
+      float: left;
+      width: 100%;
+    }
+
+    .reg-header, .reg-title{
+      display: none;
+    }
+
+    .description {
+      margin-top: -10px;
+    }
+  }
