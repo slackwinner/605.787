@@ -5,8 +5,8 @@
 }
 
 .reg-header {
-    text-align: center;
-    font-size: xx-large
+  text-align: center;
+  font-size: xx-large
 }
 
 .mobile-header {
@@ -17,14 +17,14 @@
 }
 
 .row {
-    width: 100%;
+  width: 100%;
 }
 
 .content-box {
-    position: relative;
-    border: 1px solid black;
-    background-color: lightblue;
-    margin: 10px;
+  position: relative;
+  border: 1px solid black;
+  background-color: lightblue;
+  margin: 10px;
 }
 
 .reg-title{
@@ -49,30 +49,29 @@
 }
 
 .title-box-a {
-    background-color: lightgoldenrodyellow;
+  background-color: lightgoldenrodyellow;
 }
 
 .title-box-b {
-    background-color: lightgreen;
+  background-color: lightgreen;
 }
 
 .title-box-c {
-    background-color: lightcoral;
+  background-color: lightcoral;
 }
 
 .description {
-    margin-top: 28px;
-    padding-left: 15px;
-    padding-right: 15px;
-    height: 152px;
-    cursor: ns-resize;
-    overflow: hidden;
+  margin-top: 28px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 152px;
+  cursor: ns-resize;
+  overflow: hidden;
 }
 
 .description:hover {
   overflow-x: hidden;
   overflow-y: scroll;
-
 }
 
 /********** Desktop devices only **********/
@@ -85,12 +84,11 @@
   .mobile-header, .mobile-title {
     display: none;
   }
-
 }
 
 /********** Tablet devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-   .col-md-6, .col-md-12 {
+  .col-md-6, .col-md-12 {
     float: left;
   }
   .col-md-6 {
@@ -108,16 +106,16 @@
 
 /********** Mobile devices only **********/
 @media (max-width: 767px) {
-    .col-sm-12 {
-      float: left;
-      width: 100%;
-    }
-
-    .reg-header, .reg-title{
-      display: none;
-    }
-
-    .description {
-      margin-top: -10px;
-    }
+  .col-sm-12 {
+    float: left;
+    width: 100%;
   }
+
+  .reg-header, .reg-title{
+    display: none;
+  }
+
+  .description {
+    margin-top: -10px;
+  }
+}
