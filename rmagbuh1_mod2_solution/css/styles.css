@@ -6,12 +6,12 @@
 
 .reg-header {
   text-align: center;
-  font-size: xx-large
+  font-size: 2.00em;
 }
 
 .mobile-header {
   text-align: left;
-  font-size: large;
+  font-size: 1.2em;
   font-family: 'Times New Roman', Times, serif;
   margin: 10px;
 }
@@ -33,7 +33,7 @@
   margin-top: 0px;
   padding: 2px 30px;
   text-align: center;
-  font-size: medium;
+  font-size: 1.00em;
   font-weight: bold;
   border: 1px solid black;
 }
@@ -42,7 +42,7 @@
   margin-top: 0px;
   padding: 2px 15px;
   text-align: center;
-  font-size: medium;
+  font-size: 1.10em;
   font-weight: bold;
   overflow: hidden;
   border: 1px solid black;
