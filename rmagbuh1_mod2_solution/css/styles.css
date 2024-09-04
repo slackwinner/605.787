@@ -31,7 +31,9 @@
   position: absolute;
   right: 0px;
   margin-top: 0px;
-  padding: 2px 15px;
+  padding-top: 2px;
+  padding-left: 30px;
+  padding-right: 30px;
   text-align: center;
   font-size: medium;
   font-weight: bold;
