@@ -17,7 +17,11 @@
     text-align: center;
     background-color: #FF5733;
     margin-bottom: 1px;
-  }
+}
+
+#nav-list a:hover {
+    background: #E7E7E7;
+}
 
 /** Content Body Section **/
 .content-box {
