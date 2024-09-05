@@ -41,6 +41,11 @@ WARNING!!! WARNING!!!
   // Loop over the names array and say either 'Hello' or "Good Bye"
   // using either the helloSpeaker's or byeSpeaker's 'speak' method.
   // See Lecture 50, part 1
+
+  /* 
+    Note: Added additional console logs in script.js to help highlight
+          different requirement sections for Assignment 4.
+  */       
   console.log("Executing Assignment 4: Regular Requirements")
   for (var currName = 0; currName < names.length; currName++) {
 
@@ -65,7 +70,6 @@ WARNING!!! WARNING!!!
     }
   }
 
-
   // Additional Requirements from Assignment 4 document
   // Create and pass values to the map function
   function speakerMap(currName) {
@@ -82,10 +86,9 @@ WARNING!!! WARNING!!!
   // Set map function attribute and print results to console
   console.log("Executing Assignment 4: Additional Requirements (Map Function)")
   var mapNames = names.map(speakerMap);
-  for (var currName = 0; currName < names.length; currName++) {
+  for (var currName in mapNames) {
     console.log(mapNames[currName]);
   }
-
 
   // Bonus/Optional Requirements from Assignment 4 document
   // Create and pass values to the reduce function
