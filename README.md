@@ -20,7 +20,7 @@ This repo contains all source files for assignments and class sample code.
 
 ### Module 5 (Due: 10/01/24)
 - [Assignment 5: Description](https://ychaikin.github.io/jhu-ajax-course/Module5)
-- [Assignment 5: Implementation](rmagbuh1_mod5_solution/)
+- [Assignment 5: Implementation](rmagbuh1_mod5_solution/index.html)
 
 ## Part II: Angular JS
 
