@@ -345,6 +345,16 @@ h3.menu-item-title {
   }
 }
 
+/* About Page */
+.aboutFormat {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.ratingStyle {
+  font-style: 'Arial';
+  font-size: 2.0em;
+}
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {

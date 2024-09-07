@@ -46,6 +46,10 @@ var insertProperty = function (string, propName, propValue) {
   return string;
 };
 
+// ******** Assignment 5 Section (Start) ********
+
+// Note: Modified the active switches to account for 
+//       the page navigations across Home, Menu, and About
 // Remove the class 'active' from home and switch to Menu button
 var switchMenuToActive = function () {
   // Remove 'active' from home button
@@ -53,11 +57,36 @@ var switchMenuToActive = function () {
   classes = classes.replace(new RegExp("active", "g"), "");
   document.querySelector("#navHomeButton").className = classes;
 
+  // Remove 'active' from about button
+  var classes = document.querySelector("#navAboutButton").className;
+  classes = classes.replace(new RegExp("active", "g"), "");
+  document.querySelector("#navAboutButton").className = classes;
+
   // Add 'active' to menu button if not already there
   classes = document.querySelector("#navMenuButton").className;
   if (classes.indexOf("active") === -1) {
     classes += " active";
     document.querySelector("#navMenuButton").className = classes;
+  }
+};
+
+// Remove the class 'active' from home and switch to About button
+var switchAboutToActive = function () {
+  // Remove 'active' from home button
+  var classes = document.querySelector("#navHomeButton").className;
+  classes = classes.replace(new RegExp("active", "g"), "");
+  document.querySelector("#navHomeButton").className = classes;
+
+  // Remove 'active' from menu button
+  var classes = document.querySelector("#navMenuButton").className;
+  classes = classes.replace(new RegExp("active", "g"), "");
+  document.querySelector("#navMenuButton").className = classes;
+
+  // Add 'active' to about button if not already there
+  classes = document.querySelector("#navAboutButton").className;
+  if (classes.indexOf("active") === -1) {
+    classes += " active";
+    document.querySelector("#navAboutButton").className = classes;
   }
 };
 
@@ -140,15 +169,49 @@ dc.loadAbout = function () {
   showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
     aboutHtml,
-    buildAndShowAboutHTML,
+    function (aboutHtml) {
+      // Switch active to about page
+      switchAboutToActive();
+
+      // Create star rating content
+      insertHtml("#main-content", buildAndShowAboutHTML(aboutHtml));
+    },
     false);
 };
 
-function buildAndShowAboutHTML (about) {
-
-  
+function chooseRandomStarRating (starRangeMax) {
+  return Math.floor(Math.random() * starRangeMax);
 }
 
+function buildAndShowAboutHTML (aboutHtml) {
+  var starRangeMax = 5;
+  var randStarRange = chooseRandomStarRating(starRangeMax);
+  var emptyStar = "fa fa-star-o";
+  var filledStar = "fa fa-star";
+
+  // Iterate through star range and place filled/empty stars
+  // Note: While loop concept came from geeksforgeeks website
+  // Link: https://www.geeksforgeeks.org/loops-in-javascript/#javascript-while-loop
+  let currStar = 1;
+  while(currStar <= starRangeMax) {
+    // Grab current class name
+    var currClass = "class" + currStar;
+
+    // Place filled stars if chosen star range >= current star
+    if (randStarRange >= currStar) {
+      aboutHtml = insertProperty(aboutHtml, currClass, filledStar);
+    } else {
+      // Place empty stars if chosen star range <= current star
+      aboutHtml = insertProperty(aboutHtml, currClass, emptyStar);
+    }
+    currStar++;
+  }
+  // Append the Star Rating Description
+  aboutHtml = insertProperty(aboutHtml, "starRating", randStarRange);
+  return aboutHtml;
+}
+
+// ******** Assignment 5 Section (End) ********
 
 // Load the menu categories view
 dc.loadMenuCategories = function () {
