@@ -190,8 +190,6 @@ function buildAndShowAboutHTML (aboutHtml) {
   var filledStar = "fa fa-star";
 
   // Iterate through star range and place filled/empty stars
-  // Note: While loop concept came from geeksforgeeks website
-  // Link: https://www.geeksforgeeks.org/loops-in-javascript/#javascript-while-loop
   let currStar = 1;
   while(currStar <= starRangeMax) {
     // Grab current class name
