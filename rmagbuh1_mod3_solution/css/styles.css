@@ -5,7 +5,7 @@
 }
 
 /** Nav Bar Section **/
-#navbar-brand-name h1 { /* Company Name */
+#navbar-brand-name h2 { /* Company Name */
     margin-top: 0px;
     margin-bottom: 0px;
     line-height: 0.75;
