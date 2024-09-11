@@ -5,6 +5,7 @@ Below are the sources that were used to complete this assignment:
     - [Lecture 25](https://github.com/jhu-ep-coursera/fullstack-course4/tree/master/examples/Lecture25)
 
 - Lectures
+    - [Lecture 9](https://github.com/jhu-ep-coursera/fullstack-course4/blob/master/examples/Lecture09/links-same-page.html)
     - [Lecture 26](https://github.com/jhu-ep-coursera/fullstack-course4/tree/master/examples/Lecture26)
     - [Lecture 30](https://github.com/jhu-ep-coursera/fullstack-course4/tree/master/examples/Lecture30/after)
     - [Lecture 33](https://github.com/jhu-ep-coursera/fullstack-course4/tree/master/examples/Lecture33/after)
