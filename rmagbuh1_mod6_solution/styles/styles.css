@@ -3,3 +3,18 @@
     font-size: 1.3em; 
     font-weight: bold; 
 }
+
+/* Message Styles */
+.green_design, .red_design{
+    border: solid;
+    text-align: center;
+    font-weight: bold;
+}
+
+.green_design {
+    color: green;
+}
+
+.red_design {
+    color: red;
+}

@@ -21,7 +21,7 @@
               <button ng-click="checkList()">Check If Too Much</button>
             </div>
             <div class="form-group message">
-              {{message}}
+              <div ng-class="getStyleFormat(message)"> {{message}} </div> 
             </div>
           </div> <!-- ng-controller -->
     </div> <!-- container -->

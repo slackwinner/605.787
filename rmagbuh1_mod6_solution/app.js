@@ -18,6 +18,16 @@ function LunchCheckController($scope) {
         getMessage(filterList.length);
     };
 
+    $scope.getStyleFormat = function(message) {
+        // Get style format based on message
+        if (message === "Please enter data first") {
+            return "red_design";
+        }
+        else if (message === "Enjoy!!" || message === "Too Much!!") {
+            return "green_design";
+        }
+    };
+
     function getMessage (inputSize) {
         // Is the array size empty?
         if(inputSize == 0) {

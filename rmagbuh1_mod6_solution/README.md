@@ -16,6 +16,7 @@ Below are the sources that were used to complete this assignment:
     - [String.prototype.trim()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim)
     - [Array:.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
     - [Array:Length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length)
+    - [AngularJS: ng-class](https://docs.angularjs.org/api/ng/directive/ngClass)
 
 - Other Notes:
     - The text box handles cases where the input contains " , , , , , "
