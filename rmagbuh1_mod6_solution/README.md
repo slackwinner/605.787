@@ -12,6 +12,7 @@ Below are the sources that were used to complete this assignment:
 
 - Online
     - [JavaScript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+    - [CSS Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS)
     - [String.prototype.split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
     - [String.prototype.trim()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim)
     - [Array:.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
