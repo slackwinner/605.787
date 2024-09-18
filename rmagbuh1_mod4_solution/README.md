@@ -17,3 +17,4 @@ Below are the sources that were used to complete this assignment:
     - [Array.prototype.map (GeeksForGeeks)](https://www.geeksforgeeks.org/javascript-array-map-method/#)
     - [Array.prototype.reduce (Mozilla)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
     - [Array.prototype.reduce (GeeksForGeeks)](https://www.geeksforgeeks.org/javascript-array-reduce-method/)
+    - [Array.prototype.reduce (Free Code Camp)](https://www.freecodecamp.org/news/how-to-use-javascript-array-reduce-method/)
