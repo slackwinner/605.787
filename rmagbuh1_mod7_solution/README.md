@@ -13,6 +13,7 @@ Below are the sources that were used to complete this assignment:
     - [Lecture 23](https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture23)
 
 - Online
-
+    - [JavaScript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+    - [Angular JS Documentation](https://docs.angularjs.org/guide)
 
 - Other Notes:
