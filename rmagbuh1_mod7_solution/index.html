@@ -17,7 +17,7 @@
           <h2>To Buy:</h2>
           <ul>
             <li ng-repeat="item in buy.list">
-              Buy {{ item.quantity }} {{ item.name }}
+              Buy <input type="number" name="input" ng-model="item.quantity" placeholder="quantity" class="inputBox" required> {{ item.name }}
               <button ng-click="buy.transferItem($index);"class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button>
             </li>
           </ul>
@@ -29,7 +29,7 @@
           <h2>Already Bought:</h2>
           <ul>
             <li ng-repeat="item in bought.list">
-              Bought {{ item.quantity }} {{ item.name }}
+                {{ bought.getBoughtMessage(item) }}
             </li>
           </ul>
           <div ng-if="bought.list.length == 0" class="emptyMessage">Nothing bought yet.</div>

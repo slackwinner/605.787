@@ -15,5 +15,5 @@ Below are the sources that were used to complete this assignment:
 - Online
     - [JavaScript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
     - [Angular JS Documentation](https://docs.angularjs.org/guide)
-
-- Other Notes:
+    - [Rounding Numbers in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed)
+    - [GeeksForGeeks: Number Validation](https://www.geeksforgeeks.org/number-validation-in-javascript/#approach-1-isnan-function)

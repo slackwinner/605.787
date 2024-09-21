@@ -5,6 +5,10 @@
     font-size: 1.2em;
   }
 
+  .inputBox {
+    width: 20%;
+  }
+
   li {
     margin-bottom: 7px;
     font-size: 1.2em;
