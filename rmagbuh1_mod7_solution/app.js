@@ -3,7 +3,7 @@
 
 // Item list setup variables
 var itemTypes = [
-    ["Cookies", 2.00], ["Milk", 3.00], ["Eggs", 4.00], ["Chips", 1.00], 
+    ["Cookies", 2.00], ["Milk", 3.00], ["Chips", 1.00], ["Egg(s)", 4.00],
     ["Frozen Pizza(s)", 5.00], ["LEGO Star Wars Battle Pack(s)", 10.00], 
     ["Kit Kat(s)", 2.00], ["Pen(s)", 1.00]
 ];
