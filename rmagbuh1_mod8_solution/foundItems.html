@@ -1,0 +1,7 @@
+<ul>
+  <li ng-repeat="currItem in searchResults">
+    {{ currItem.name }} ({{currItem.short_name}})<br>
+    Description: {{ currItem.description}}<br>
+    <button ng-click="onRemove({index: $index});">Don't Want This One!</button>
+  </li>
+</ul>
