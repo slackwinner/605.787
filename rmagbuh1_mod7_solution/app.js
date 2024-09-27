@@ -45,10 +45,6 @@ function AlreadyBoughtController(ShoppingListService, AngularCurrencyFilter) {
         var msg = "Bought " + item.quantity + " " + item.name + " for total price of " + totalPriceFormat;
         return msg;
     };
-
-    // TODO:
-    // Create custom filter to apply the total price displayed in bought list
-    // Example: "Bought 10 cookies for total price of $$$20.00"
 }
 
 function ShoppingListService() {
@@ -109,5 +105,4 @@ function AngularCurrencyFilter() {
     return angularDollars;
   }
 };
-
 })();
