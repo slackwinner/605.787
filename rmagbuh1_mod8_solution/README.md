@@ -13,5 +13,6 @@ Below are the sources that were used to complete this assignment:
 - Online
     - [JavaScript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
     - [Angular JS Documentation](https://docs.angularjs.org/guide)
+    - [CSS Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS)
     - [Stack Overflow: Iterating Over Object Literals (Stack Overflow)](https://stackoverflow.com/questions/9354834/iterate-over-object-literal-values)
     - [w3: Java String Includes](https://www.w3schools.com/jsref/jsref_includes.asp)

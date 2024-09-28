@@ -1,3 +1,5 @@
+/* Base Styles */
+
 h1 {
   margin-bottom: 30px;
 }
@@ -30,6 +32,48 @@ input[type="text"] {
   width: 3em;
   height: 3em;
 }
+
+/* Results Format */
+ul li {
+  margin-bottom: 10px;
+}
+
+li {
+  padding: 10px;
+  list-style-type: none;
+  border: solid;
+}
+
+.results {
+  padding-top: 60px;
+}
+
+.itemName {
+  font-weight: bold;
+  font-size: 1.15em;
+}
+
+.itemDescription {
+  font-style: italic;
+  font-size: 1.00em;
+  padding-bottom: 5px;
+}
+
+.foundResults {
+  font-weight: bold;
+  color: green;
+  font-size: 1.2em;
+  text-align: center;
+  padding-bottom: 4px;
+}
+
+.noResults {
+  font-weight: bold;
+  color: red;
+  font-size: 1.2em;
+  text-align: center;
+}
+
 @-webkit-keyframes load8 {
   0% {
     -webkit-transform: rotate(0deg);

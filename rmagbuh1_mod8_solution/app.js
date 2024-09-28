@@ -11,7 +11,7 @@ function FoundItemsDirective() {
     var ddo = {
         templateUrl: 'foundItems.html',
         scope: {
-            searchResults: '<',
+            found: '<',
             onRemove: '&'
         },
     };
@@ -22,20 +22,29 @@ NarrowItDownController.$inject = ["MenuSearchService"];
 function NarrowItDownController(MenuSearchService) {
     var narrowCon = this;
 
-    // Grabs and filters out menu items based on search input
+    // Grab and filter out menu items based on search input
     narrowCon.searchMenu = function (searchInput) {
-        var results = MenuSearchService.getMatchedMenuItems(searchInput);
-        results.then(function (response){
-            narrowCon.searchResults = response;
-            console.log(narrowCon.searchResults);
-        }).catch(function (error) {
-            console.log("Error Msg: " + error);
-        });
+
+        // Is the search input not empty?
+       if (searchInput) {
+            var results = MenuSearchService.getMatchedMenuItems(searchInput);
+            results.then(function (response){
+                narrowCon.found = response;
+                console.log(narrowCon.found);
+            }).catch(function (error) {
+                console.log("Error Msg: " + error);
+            });
+       }
+       else {
+            // Return an empty array to indicate no found results
+            narrowCon.found = [];
+            console.log("Nothing Found!");
+       }
     }
 
     // Remove certain items from search results
     narrowCon.removeItem = function (index) {
-        narrowCon.searchResults.splice(index, 1);
+        narrowCon.found.splice(index, 1);
     }
 };
 
@@ -49,6 +58,7 @@ function MenuSearchService($http, ApiBasePath) {
             url: (ApiBasePath + "/menu_items.json")
 
         }).then (function (result) {
+            // Note: Clear out existing items in result array before searching
             var foundResults = [];
             var items = result.data;
             // Grab current category from results
@@ -57,8 +67,8 @@ function MenuSearchService($http, ApiBasePath) {
                 // Traverse and search through items within current category
                 for (var currItem in category) {
                     var description = category[currItem].description;
-                    // Does the description have the search term in it? 
-                    if(description.includes(searchInput)) {
+                    // Does the description have the search input in it?
+                    if(description.includes(searchInput.toLowerCase())) {
                         foundResults.push(category[currItem]);
                     }
                 }
