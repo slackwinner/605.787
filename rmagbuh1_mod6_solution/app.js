@@ -29,6 +29,7 @@ function LunchCheckController($scope) {
     };
 
     function getMessage (inputSize) {
+        console.log("Number of List Items: " + inputSize);
         // Is the array size empty?
         if(inputSize == 0) {
             $scope.message = "Please enter data first";
