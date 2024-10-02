@@ -20,4 +20,4 @@ Below are the sources that were used to complete this assignment:
     - [AngularJS: ng-class](https://docs.angularjs.org/api/ng/directive/ngClass)
 
 - Other Notes:
-    - The text box handles cases where the input contains " , , , , , "
+    - The text box handles cases where the input contains _, , , , ,_
