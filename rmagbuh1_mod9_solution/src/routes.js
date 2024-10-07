@@ -1,17 +1,17 @@
 (function () {
-    'use strict';
+'use strict';
 
-    angular.module('MenuApp').config(RoutesConfig);
+angular.module('MenuApp')
+.config(RoutesConfig);
 
-    RoutesConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
-    function RoutesConfig($stateProvider, $urlRouterProvider) {
+RoutesConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
+function RoutesConfig($stateProvider, $urlRouterProvider) {
 
-        // Redirect to home page if no other URL matches
-        $urlRouterProvider.otherwise('/');
+    // Redirect to home page if no other URL matches
+    $urlRouterProvider.otherwise('/');
 
-        // *** Set up UI states ***
-        $stateProvider
-
+    // *** Set up UI states ***
+    $stateProvider
         // Home Page
         .state('home', {
             url: '/',
@@ -34,12 +34,12 @@
         .state('categoryItems', {
             url: '/categoryItems/{categoryShortName}',
             templateURL: 'src/menuapp/templates/items.template.html',
-            controller: 'CategoryItemsController as categoryItemsCtrl',
+            controller: 'ItemsController as itemCtrl',
             resolve: {
-                categoryItems: ['$stateParams', 'MenuDataService', function($stateParams, MenuDataService) {
+                items: ['$stateParams', 'MenuDataService', function($stateParams, MenuDataService) {
                     return MenuDataService.getItemsForCategory($stateParams.categoriesShortName);
                 }]
             }
         })
-    }
+}
 })();
