@@ -1,12 +1,12 @@
 (function () {
-'use strict';
+  'use strict';
 
-angular.module('MenuApp')
-.controller('ItemsController', ItemsController);
+  angular.module('MenuApp')
+    .controller('ItemsController', ItemsController);
 
-ItemsController.$inject = ['items'];
-function ItemsController(items) {
-  var categoryItemsCtrl= this;
-  categoryItemsCtrl.items = items;
-}
+    ItemsController.$inject = ['items'];
+    function ItemsController(items) {
+      var itemsCtrl= this;
+      itemsCtrl.items = items;
+    }
 })();

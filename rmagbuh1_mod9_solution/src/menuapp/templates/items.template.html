@@ -1,4 +1,18 @@
-<h1>{{itemCtrl.items.category.name}} Category Items</h1>
-<div ng-repeat="item in itemCtrl.item.menu_items">
-    {{item.name}}
+<h2>{{itemsCtrl.items.category.name}} Menu Items Page</h1>
+
+<div class="homeLink">
+    <a ui-sref="home">Home</a> &lt;  <a ui-sref="categories">Categories</a> &lt; <span>{{itemsCtrl.items.category.name}} Menu Items</span>
 </div>
+
+<table class="categoryTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in itemsCtrl.items.menu_items" >
+            <td> {{item.name}}</td>
+        </tr>
+    </tbody>
+</table>

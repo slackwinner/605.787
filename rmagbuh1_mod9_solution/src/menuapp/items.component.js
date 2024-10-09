@@ -1,11 +1,11 @@
 (function () {
-'use strict';
+  'use strict';
 
-angular.module('MenuApp')
-  .component('items', {
-    templateUrl: 'src/menuapp/templates/items.template.html',
-    bindings: {
-      items: '<'
-    }
-  });
+  angular.module('MenuApp')
+    .component('items', {
+      templateUrl: 'src/menuapp/templates/items.template.html',
+      bindings: {
+        items: '<'
+      }
+    });
 })();

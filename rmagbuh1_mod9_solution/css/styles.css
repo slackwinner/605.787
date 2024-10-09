@@ -1,0 +1,41 @@
+/* Base Styles */
+h1, h2 {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.929);
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+body {
+    background-image: url("../images/food_wallpaper.jpg");
+    background-size: auto;
+    background-position: center center;
+    background-color: gray;
+}
+
+th, td{
+    border: 1px solid;
+    text-align: center;
+    font-size: 1.15em;
+    font-weight: bold;
+    background-color: lightcyan;
+}
+
+/* Formatting */
+.homeLink {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.categoryTable {
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.categoryData:hover {
+    background-color: coral;
+}
+

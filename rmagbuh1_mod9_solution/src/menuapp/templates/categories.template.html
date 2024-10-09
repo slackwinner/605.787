@@ -1,6 +1,23 @@
-<h1>Categories</h1>
-<div ng-repeat="category in categoriesCtrl.categories">
-    <a ui-sref="items({categoriesShortName: category.short_name})">
-        {{category.name}}
-    </a>
+<h2>Categories Page</h2>
+
+<div class="homeLink">
+    <a ui-sref="home">Home</a> &lt; <span>Categories</span>
 </div>
+
+<table class="categoryTable">
+    <thead>
+        <tr>
+            <th>Food Menu Categories</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="category in categoriesCtrl.categories" 
+            ui-sref="items({categoryShortName: category.short_name})">
+            <td class="categoryData">
+                <a ui-sref="items({categoryShortName: category.short_name})">
+                    {{category.name}}
+                </a> 
+            </td>
+        </tr>
+    </tbody>
+</table>
