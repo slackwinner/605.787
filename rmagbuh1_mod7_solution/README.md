@@ -17,5 +17,3 @@ Below are the sources that were used to complete this assignment:
     - [Angular JS Documentation](https://docs.angularjs.org/guide)
     - [Rounding Numbers in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed)
     - [GeeksForGeeks: Number Validation](https://www.geeksforgeeks.org/number-validation-in-javascript/#approach-1-isnan-function)
-
-Note: app.js contains a random number generator (RNG) that randomly picks and sets different quantities for each item in itemTypes array. The location of the RNG is located in the service.createList function within ShoppingListService().
