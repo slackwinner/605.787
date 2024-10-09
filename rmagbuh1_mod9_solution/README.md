@@ -18,5 +18,5 @@ Below are the sources that were used to complete this assignment:
     - [Angular JS Documentation](https://docs.angularjs.org/guide)
     - [CSS Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS)
     - [CSS Table Styles (w3schools)](https://www.w3schools.com/css/css_table.asp)
-    - [HTML Tables (w3cschools)](https://www.w3schools.com/html/html_tables.asp)
+    - [HTML Tables (w3schools)](https://www.w3schools.com/html/html_tables.asp)
     - [Food Image](https://www.vecteezy.com/photo/31781760-chinese-food-on-white-background-noodles-fried-rice-dumplings-stir-fry-chicken-dim-sum-spring-roll-generative-ai)
