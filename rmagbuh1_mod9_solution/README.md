@@ -1,7 +1,6 @@
 # Assignment 9 Notes
 
 Below are the sources that were used to complete this assignment:
-
 - Lectures
     - [Lecture 33](https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture33)
     - [Lecture 34](https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture34)
