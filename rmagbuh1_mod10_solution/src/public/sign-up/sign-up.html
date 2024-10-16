@@ -1,7 +1,7 @@
 <div class="container">
     <h2 class="text-center">Fill out this form to sign up for the newsletter</h2>
     <fieldset>
-        <form name='signUpForm' novalidate>
+        <form name='signUpForm' novalidate class="form-container">
           <input type="text" name="firstName" placeholder="First Name" ng-model="signUpCtrl.firstName" required>
             <span ng-if="(signUpForm.firstName.$error.required && signUpForm.firstName.$touched)"> First Name is Required</span>
             <br>
@@ -18,11 +18,15 @@
             <span ng-if="(signUpForm.phone.$invalid && signUpForm.phone.$touched)">Phone must be in the format ###-###-####</span>
             <br>
 
-          <button ng-disabled="signUpForm.$invalid" ng-click="signUpForm.submit()">Submit</button>
-            <span ng-if="signUpCtrl.savedInfo">Your information has been saved!</span>
+          <div class="text-center">What is the menu number of your favorite dish?</div>
+          <input type="text" name="dishChoice" placeholder="Menu Number Format" ng-model="signUpCtrl.chosenDish" ng-change="signUpCtrl.dishCheck()" required>
+            <span ng-if="(signUpForm.dishChoice.$invalid && signUpForm.dishChoice.$touched)">Enter a valid menu number of your favorite dish</span>
+            <br>
+
+          <button class="submitButton" ng-disabled="signUpForm.$invalid" ng-click="signUpCtrl.submit()">Submit</button>
             <br>
         </form>
-        <!--<div ng-if="signUpCtrl.savedInfo">Your information has been saved!</div>-->
     </fieldset>
-
+    <div class="signUpFeedback" ng-if="signUpCtrl.savedInfo">Your information has been saved!</div>
+    <div class="signUpFeedback" ng-if="signUpCtrl.dishError">No such menu exists.</div>
 </div>

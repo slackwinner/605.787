@@ -16,3 +16,6 @@ Below are the sources that were used to complete this assignment:
     - [JavaScript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
     - [Angular JS Documentation](https://docs.angularjs.org/guide)
     - [CSS Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS)
+    - [Flex Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
+    - [Stack Overflow: Getting Data From Service to Controller](https://stackoverflow.com/questions/58313606/how-to-get-data-from-angularjs-service-response-to-controller-scope-object)
+        - Note: Concepts of the stack overflow code were used in the sign-up.controller.js file
