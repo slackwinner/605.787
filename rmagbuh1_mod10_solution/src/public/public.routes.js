@@ -50,10 +50,10 @@ function routeConfig ($stateProvider) {
     .state('public.myinfo', {
       url: '/myinfo',
       templateUrl: 'src/public/my-info/my-info.html',
-      controller: 'InfoController',
+      controller: 'MyInfoController',
       controllerAs: 'infoCtrl',
       resolve: {
-        getUser: ['UserService', function (UserService) {
+        user: ['UserService', function (UserService) {
           return UserService.getUserInfo();
         }]
       }

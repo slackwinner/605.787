@@ -2,29 +2,23 @@
     <h2 class="text-center">Fill out this form to sign up for the newsletter</h2>
     <fieldset>
         <form name='signUpForm' novalidate class="form-container">
+          <span ng-if="(signUpForm.firstName.$error.required && signUpForm.firstName.$touched)"> First Name is Required</span>
           <input type="text" name="firstName" placeholder="First Name" ng-model="signUpCtrl.firstName" required>
-            <span ng-if="(signUpForm.firstName.$error.required && signUpForm.firstName.$touched)"> First Name is Required</span>
-            <br>
 
+          <span ng-if="(signUpForm.lastName.$error.required && signUpForm.lastName.$touched)"> Last Name is Required</span>
           <input type="text" name="lastName" placeholder="Last Name" ng-model="signUpCtrl.lastName" required>
-            <span ng-if="(signUpForm.lastName.$error.required && signUpForm.lastName.$touched)"> Last Name is Required</span>
-            <br>
 
+          <span ng-if="(signUpForm.email.$invalid && signUpForm.email.$touched)"> Must be a valid email address: handle@domain format </span>
           <input type="email" name="email" placeholder="Email" ng-model="signUpCtrl.email" required>
-            <span ng-if="(signUpForm.email.$invalid && signUpForm.email.$touched)"> Must be a valid email address: handle@domain format </span>
-            <br>
 
+          <span ng-if="(signUpForm.phone.$invalid && signUpForm.phone.$touched)">Phone must be in the format ###-###-####</span>
           <input type="text" name="phone" placeholder="Phone ###-###-####" ng-model="signUpCtrl.phone" pattern="(\d{3})-(\d{3})-(\d{4})" required>
-            <span ng-if="(signUpForm.phone.$invalid && signUpForm.phone.$touched)">Phone must be in the format ###-###-####</span>
-            <br>
 
-          <div class="text-center">What is the menu number of your favorite dish?</div>
-          <input type="text" name="dishChoice" placeholder="Menu Number Format" ng-model="signUpCtrl.chosenDish" ng-change="signUpCtrl.dishCheck()" required>
-            <span ng-if="(signUpForm.dishChoice.$invalid && signUpForm.dishChoice.$touched)">Enter a valid menu number of your favorite dish</span>
-            <br>
+          <h3 class="text-center">What is the menu item number of your favorite dish?</h3>
+          <input type="text" name="dishChoice" placeholder="Menu Item Number (e.g. L1)" ng-model="signUpCtrl.chosenDish" ng-change="signUpCtrl.dishCheck()" required>
+          <span ng-if="(signUpForm.dishChoice.$invalid && signUpForm.dishChoice.$touched)">Enter a valid menu number of your favorite dish</span>
 
           <button class="submitButton" ng-disabled="signUpForm.$invalid" ng-click="signUpCtrl.submit()">Submit</button>
-            <br>
         </form>
     </fieldset>
     <div class="signUpFeedback" ng-if="signUpCtrl.savedInfo">Your information has been saved!</div>

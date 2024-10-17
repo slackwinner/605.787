@@ -119,6 +119,8 @@ h3.menu-item-title {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 25px;
+  gap: 20px;
 }
 
 .signUpFeedback {
@@ -132,8 +134,28 @@ h3.menu-item-title {
 
 input[type="text"], input[type="email"] {
   color: black;
+  width: 25%;
 }
-/* END SIGN UP PAGE
+/* END SIGN UP PAGE */
+
+/* MY INFO PAGE */
+.infoFormat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.userInfoLayout {
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.menuInfoLayout {
+  padding-top: 20px;
+  font-size: 1.2em;
+}
+/* END MY INFO PAGE */
 
 
 /********** Large devices only **********/

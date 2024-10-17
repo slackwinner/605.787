@@ -31,17 +31,25 @@
                 url: (ApiPath + "/menu_items/" + categoryShortName + "/menu_items/" + menuNum + ".json")
             })
             .then (function (results) {
+                // Create initial return object package
+                var menuResults = {match: false};
+
                 // Did we get no results?
                 if(results.data == null) {
-                    return false;
+                    return menuResults;
                 }
-                // Did we get the corresponding results
+                // Did we get the corresponding results?
                 else if (results.data.short_name == menuItem) {
-                    return true;
+                    menuResults = {
+                        match: true,
+                        menuInfo: results.data,
+                        menuCategory: categoryShortName,
+                    };
+                    return menuResults;
                 }
                 else {
                     // Handles other cases if the first two if conditions are not satisfied
-                    return false;
+                    return menuResults;
                 }
             })
             .catch(function (error) {

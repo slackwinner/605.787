@@ -16,15 +16,18 @@
             UserService.checkDish(menuItem)
               .then(function(results) {
                 // Is the dish check valid?
-                if(results) {
+                console.log(results);
+                if(results.match) {
                     // Create and save user info
                     var userData = {
                         firstName: signUpCtrl.firstName,
                         lastName: signUpCtrl.lastName,
                         email: signUpCtrl.email,
                         phone: signUpCtrl.phone,
-                        chosenDish: menuItem
+                        menuInfo: results.menuInfo,
+                        menuCategory: results.menuCategory
                     };
+                    console.log(userData);
                     // Save the user info
                     UserService.setUserInfo(userData);
 

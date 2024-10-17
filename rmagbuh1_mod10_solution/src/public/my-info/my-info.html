@@ -1,1 +1,16 @@
-<h1> This Da Info Page!!!</h1>
+<div class="container"> 
+    <h2 ng-if="infoCtrl.noUserFound" class="text-center">
+        Not Signed Up Yet. <a ui-sref="public.signup">Sign Up Now!</a>
+    </h2>
+
+    <div ng-if="infoCtrl.user" class="infoFormat">
+        <h2>My Info</h2>
+        <div class="userInfoLayout">Name: {{infoCtrl.firstName}} {{infoCtrl.lastName}}</div>
+        <div class="userInfoLayout">Email: {{infoCtrl.email}}</div>
+        <div class="userInfoLayout">Phone: {{infoCtrl.phone}}</div>
+        <h2>Favorite Menu Dish</h2>
+        <img class="img-responsive" width="250" height="250" ng-src="{{infoCtrl.menuItemPath}}" alt="{{infoCtrl.menuDesc}}">
+        <div class="menuInfoLayout">{{infoCtrl.menuName}} ({{infoCtrl.menuShortName}})</div>
+        <div class="menuInfoLayout">Description: {{infoCtrl.menuDesc}}</div>
+    </div>
+</div>
