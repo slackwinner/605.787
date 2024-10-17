@@ -18,22 +18,25 @@
         };
 
         service.checkDish = function (menuItem) {
-            try {
+            // Set default values
+            var menuResults = {match: false};
+            var categoryShortName = "default";
+            var menuNum = 0;
+
+            // Does the menuItem contain letters and numbers?
+            if ((menuItem != null) && (menuItem.match(/^(?=.*[A-Za-z])(?=.*\d).+$/))) {
                 // Extract the menu information 
+                var menuItem = menuItem.toUpperCase();
                 var categoryShortName = menuItem.match(/[A-Z]/g).join('');
                 var menuNum = menuItem.match(/[0-9]/g).join('') - 1;
-            } catch (error) {
-                console.log("Extracting Dish Info Error Message: " + error);
             }
+
             // Submit a GET Request and return results
             return $http({
                 method: "GET",
                 url: (ApiPath + "/menu_items/" + categoryShortName + "/menu_items/" + menuNum + ".json")
             })
             .then (function (results) {
-                // Create initial return object package
-                var menuResults = {match: false};
-
                 // Did we get no results?
                 if(results.data == null) {
                     return menuResults;
@@ -52,9 +55,6 @@
                     return menuResults;
                 }
             })
-            .catch(function (error) {
-                console.log("Checking Category Error Message: " + error);
-            });
         };
     }
 })();

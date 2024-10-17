@@ -152,9 +152,17 @@ input[type="text"], input[type="email"] {
 }
 
 .menuInfoLayout {
-  padding-top: 20px;
+  padding-top: 25px;
   font-size: 1.2em;
 }
+
+.my-info-menu-item-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #3F0C1F;
+}
+
 /* END MY INFO PAGE */
 
 

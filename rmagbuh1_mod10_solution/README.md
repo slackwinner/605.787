@@ -18,4 +18,7 @@ Below are the sources that were used to complete this assignment:
     - [CSS Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS)
     - [Flex Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
     - [Stack Overflow: Getting Data From Service to Controller](https://stackoverflow.com/questions/58313606/how-to-get-data-from-angularjs-service-response-to-controller-scope-object)
-        - Note: Concepts of the stack overflow code were used in the sign-up.controller.js file
+        - Note: Concepts of this stack overflow code were used in the sign-up.controller.js file
+    - [w3schools: ng-change](https://www.w3schools.com/angular/ng_ng-change.asp)
+    - [Geeks for Geeks: ng-change](https://www.geeksforgeeks.org/angularjs-ng-change-directive/)
+        - Note: Concepts of ng-change from w3schools and Geeks for Geeks were used in sign-up.html and sign-up.controller.js

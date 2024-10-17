@@ -15,12 +15,11 @@
           <input type="text" name="phone" placeholder="Phone ###-###-####" ng-model="signUpCtrl.phone" pattern="(\d{3})-(\d{3})-(\d{4})" required>
 
           <h3 class="text-center">What is the menu item number of your favorite dish?</h3>
-          <input type="text" name="dishChoice" placeholder="Menu Item Number (e.g. L1)" ng-model="signUpCtrl.chosenDish" ng-change="signUpCtrl.dishCheck()" required>
           <span ng-if="(signUpForm.dishChoice.$invalid && signUpForm.dishChoice.$touched)">Enter a valid menu number of your favorite dish</span>
-
+          <input type="text" name="dishChoice" placeholder="Menu Item Number (e.g. L1)" ng-model="signUpCtrl.chosenDish" ng-change="signUpCtrl.validateDish()" required>
           <button class="submitButton" ng-disabled="signUpForm.$invalid" ng-click="signUpCtrl.submit()">Submit</button>
         </form>
     </fieldset>
-    <div class="signUpFeedback" ng-if="signUpCtrl.savedInfo">Your information has been saved!</div>
     <div class="signUpFeedback" ng-if="signUpCtrl.dishError">No such menu exists.</div>
+    <div class="signUpFeedback" ng-if="signUpCtrl.savedInfo">Your information has been saved!</div>
 </div>

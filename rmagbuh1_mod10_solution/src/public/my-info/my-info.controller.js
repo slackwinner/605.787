@@ -27,6 +27,5 @@
             infoCtrl.menuDesc = user.menuInfo.description;
             infoCtrl.menuItemPath = (ImagePath + "/" + infoCtrl.menuCategory + "/" + infoCtrl.menuShortName + ".jpg");
         }
-
     }
 })();

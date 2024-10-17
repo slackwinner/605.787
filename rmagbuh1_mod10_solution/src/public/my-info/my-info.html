@@ -9,7 +9,9 @@
         <div class="userInfoLayout">Email: {{infoCtrl.email}}</div>
         <div class="userInfoLayout">Phone: {{infoCtrl.phone}}</div>
         <h2>Favorite Menu Dish</h2>
-        <img class="img-responsive" width="250" height="250" ng-src="{{infoCtrl.menuItemPath}}" alt="{{infoCtrl.menuDesc}}">
+        <div class="my-info-menu-item-photo">
+            <img class="img-responsive" width="250" height="250" ng-src="{{infoCtrl.menuItemPath}}" alt="{{infoCtrl.menuName}}">
+        </div>
         <div class="menuInfoLayout">{{infoCtrl.menuName}} ({{infoCtrl.menuShortName}})</div>
         <div class="menuInfoLayout">Description: {{infoCtrl.menuDesc}}</div>
     </div>
