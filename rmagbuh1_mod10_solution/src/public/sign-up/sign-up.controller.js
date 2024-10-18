@@ -14,24 +14,36 @@
         signUpCtrl.validateDish = function () {
             UserService.checkDish(signUpCtrl.chosenDish)
             .then(function(results) {
-                // Did we have a valid menu item?
+                // Do we have a valid menu item and all form items are filled out properly?
                 if(results.match) {
                     searchResults = results;
                     signUpCtrl.dishError = false;
                 }
-                // Did we have a dish input and no match?
-                else if ((signUpCtrl.chosenDish && !results.match)) {
+                // Do we have a dish input and no match?
+                else if((signUpCtrl.chosenDish && !results.match)) {
                     signUpCtrl.dishError = true;
                 }
-                else {
-                    // Reset dish error message in cases where dish input is empty
-                    signUpCtrl.dishError = false;
+                // Did we get any matches overall?
+                if(!results.match) {
+                    signUpCtrl.savedInfo = false;
                 }
             })
             .catch(function (error) {
                 console.log("Data fetch error while validating dish: " + error);
             });
         };
+
+        // Dynamically choose button color based on form and search result validation
+        signUpCtrl.getButtonColor = function(signUpForm) {
+            console.log(signUpForm);
+            // Is the entire form valid?
+            if ((signUpForm == false && signUpCtrl.dishError == false)) {
+                return "submitReady";
+            }
+            else {
+                return "submitError";
+            }
+        }
 
         signUpCtrl.submit = function () {
             // Did we get a menu item match?
@@ -48,7 +60,7 @@
                 // Save the user info and display successful message
                 UserService.setUserInfo(userProfile);
                 signUpCtrl.savedInfo = true;
-            } 
+            }
         };
     }
 })();

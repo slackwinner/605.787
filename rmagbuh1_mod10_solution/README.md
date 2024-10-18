@@ -22,3 +22,5 @@ Below are the sources that were used to complete this assignment:
     - [w3schools: ng-change](https://www.w3schools.com/angular/ng_ng-change.asp)
     - [Geeks for Geeks: ng-change](https://www.geeksforgeeks.org/angularjs-ng-change-directive/)
         - Note: Concepts of ng-change from w3schools and Geeks for Geeks were used in sign-up.html and sign-up.controller.js
+    - [Angular JS: ng-hide](https://docs.angularjs.org/api/ng/directive/ngHide)
+    - [Angular JS: ng-class](https://docs.angularjs.org/api/ng/directive/ngClass)

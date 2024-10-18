@@ -128,8 +128,12 @@ h3.menu-item-title {
   text-align: center;
 }
 
-.submitButton {
+.submitReady {
   background-color: green;
+}
+
+.submitError {
+  background-color: red;
 }
 
 input[type="text"], input[type="email"] {

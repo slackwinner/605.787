@@ -17,6 +17,17 @@
             return service.user;
         };
 
+        service.validateForm = function (signUpForm) {
+            // Is the form valid?
+            console.log(signUpForm);
+            if(!signUpForm.$invalid) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        };
+
         service.checkDish = function (menuItem) {
             // Set default values
             var menuResults = {match: false};
@@ -46,7 +57,7 @@
                     menuResults = {
                         match: true,
                         menuInfo: results.data,
-                        menuCategory: categoryShortName,
+                        menuCategory: categoryShortName
                     };
                     return menuResults;
                 }
