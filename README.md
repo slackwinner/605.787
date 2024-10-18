@@ -45,3 +45,4 @@ This repo contains all source files for assignments and class sample code.
 ### Module 10 (Due: 12/10/24)
 - [Assignment 10: Description](https://ychaikin.github.io/jhu-ajax-course/Module10)
 - [Assignment 10: Implementation](rmagbuh1_mod10_solution/)
+- [Assignment 10: Jasmine Test](rmagbuh1_mod10_solution/SpecRunner.html)

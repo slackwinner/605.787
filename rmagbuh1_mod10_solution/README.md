@@ -24,3 +24,4 @@ Below are the sources that were used to complete this assignment:
         - Note: Concepts of ng-change from w3schools and Geeks for Geeks were used in sign-up.html and sign-up.controller.js
     - [Angular JS: ng-hide](https://docs.angularjs.org/api/ng/directive/ngHide)
     - [Angular JS: ng-class](https://docs.angularjs.org/api/ng/directive/ngClass)
+    - [Angular JS: $httpBackend](https://docs.angularjs.org/api/ngMock/service/$httpBackend)

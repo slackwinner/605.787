@@ -4,18 +4,19 @@
     angular.module('public')
       .controller('SignUpController', SignUpController);
     
-    SignUpController.$inject = ['UserService'];
-    function SignUpController(UserService) {
+    SignUpController.$inject = ['UserService', 'MenuService'];
+    function SignUpController(UserService, MenuService) {
         var signUpCtrl = this;
         var userProfile = null;
         var searchResults = null;
 
         // Validate Dish Input
         signUpCtrl.validateDish = function () {
-            UserService.checkDish(signUpCtrl.chosenDish)
+            MenuService.checkDish(signUpCtrl.chosenDish)
             .then(function(results) {
                 // Do we have a valid menu item and all form items are filled out properly?
                 if(results.match) {
+                    console.log(results);
                     searchResults = results;
                     signUpCtrl.dishError = false;
                 }
@@ -35,7 +36,6 @@
 
         // Dynamically choose button color based on form and search result validation
         signUpCtrl.getButtonColor = function(signUpForm) {
-            console.log(signUpForm);
             // Is the entire form valid?
             if ((signUpForm == false && signUpCtrl.dishError == false)) {
                 return "submitReady";
