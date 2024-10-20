@@ -4,11 +4,11 @@
 angular.module('ShoppingListCheckOff', [])
 .controller('ToBuyController', ToBuyController)
 .controller('AlreadyBoughtController', AlreadyBoughtController)
-.service('ShoppingListService', ShoppingListService)
+.service('ShoppingListCheckOffService', ShoppingListCheckOffService)
 .filter('AngularCurrency', AngularCurrencyFilter);
 
-ToBuyController.$inject = ['ShoppingListService'];
-function ToBuyController(ShoppingListService) {
+ToBuyController.$inject = ['ShoppingListCheckOffService'];
+function ToBuyController(ShoppingListCheckOffService) {
     var buy = this;
 
     // Sets up a list full of items
@@ -19,33 +19,33 @@ function ToBuyController(ShoppingListService) {
     ];
 
     // Create and populate buy list items
-    ShoppingListService.createList(itemTypes);
+    ShoppingListCheckOffService.createList(itemTypes);
     
     // Grab current buy list update
-    buy.list = ShoppingListService.getBuyList();
+    buy.list = ShoppingListCheckOffService.getBuyList();
 
     // Transfer item to bought list
     buy.transferItem = function (itemIdx) {
-        ShoppingListService.transferItem(itemIdx);
+        ShoppingListCheckOffService.transferItem(itemIdx);
     }
 }
 
-AlreadyBoughtController.$inject = ['ShoppingListService', 'AngularCurrencyFilter'];
-function AlreadyBoughtController(ShoppingListService, AngularCurrencyFilter) {
+AlreadyBoughtController.$inject = ['ShoppingListCheckOffService', 'AngularCurrencyFilter'];
+function AlreadyBoughtController(ShoppingListCheckOffService, AngularCurrencyFilter) {
     var bought = this;
 
     // Grab bought list updates
-    bought.list = ShoppingListService.getBoughtList();
+    bought.list = ShoppingListCheckOffService.getBoughtList();
 
     bought.getBoughtMessage = function (item) {
-        var totalPrice = ShoppingListService.getTotalPrice(item.quantity, item.pricePerItem);
+        var totalPrice = ShoppingListCheckOffService.getTotalPrice(item.quantity, item.pricePerItem);
         var totalPriceFormat = AngularCurrencyFilter(totalPrice);
         var msg = "Bought " + item.quantity + " " + item.name + " for total price of " + totalPriceFormat;
         return msg;
     };
 }
 
-function ShoppingListService() {
+function ShoppingListCheckOffService() {
     // Note: Provides business function logic for shopping services
     var service = this;
     var buyList = [];
@@ -96,7 +96,7 @@ function AngularCurrencyFilter() {
   return function (totalPrice) {
 
     // Is total price a valid number?
-    // Handles cases where input is e, +, -, negative, etc.
+    // Handles cases where input is not a number or is a negative number
     if (isNaN(totalPrice) || totalPrice < 0) {
         // Overwrite total price with default value
         totalPrice = 0;
