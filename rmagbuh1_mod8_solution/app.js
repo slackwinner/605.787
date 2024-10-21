@@ -51,14 +51,13 @@ function NarrowItDownController(MenuSearchService) {
 MenuSearchService.$inject = ['$http', 'ApiBasePath'];
 function MenuSearchService($http, ApiBasePath) {
     var service = this;
-    
+
     service.getMatchedMenuItems = function (searchInput) {
         return $http({
             method: "GET",
             url: (ApiBasePath + "/menu_items.json")
-
         }).then (function (result) {
-            // Note: Clear out existing items in result array before searching
+            // Note: Clear out existing items in result array before search operation
             var foundResults = [];
             var items = result.data;
             // Grab current category from results
