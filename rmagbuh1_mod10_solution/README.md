@@ -7,10 +7,10 @@ Below are the sources that were used to complete this assignment:
 - Lectures
     - [Lecture 42](https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture42)
     - [Lecture 43](https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture43)
-    - [Lecture 44](https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture35)
-    - [Lecture 45](https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture36)
-    - [Lecture 46](https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture37)
-    - [Lecture 47](https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture38)
+    - [Lecture 44](https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture44)
+    - [Lecture 45](https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture45)
+    - [Lecture 46](https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture46)
+    - [Lecture 47](https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture47)
 
 - Online
     - [JavaScript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)

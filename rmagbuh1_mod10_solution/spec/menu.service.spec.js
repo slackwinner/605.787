@@ -16,7 +16,7 @@ describe('menuService', function () {
     });
   
     it('should return a valid response if menu exists', function() {
-        // Valid input/ response variables
+        // Valid input/response variables
         var validMenuCategory = 'FR';
         var validMenuItemNum = '1';
         var validMenuItem = 'FR2';
@@ -36,7 +36,7 @@ describe('menuService', function () {
     });
 
     it('should return an invalid response if menu does not exists', function() {
-        // Invalid input/ response variables
+        // Invalid input/response variables
         var invalidMenuCategory = 'C';
         var invalidMenuItemNum = '53';
         var invalidMenuItem = 'C54';
