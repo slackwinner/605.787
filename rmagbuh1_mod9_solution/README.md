@@ -10,7 +10,7 @@ Below are the sources that were used to complete this assignment:
     - [Lecture 38](https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture38)
     - [Lecture 39](https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture39)
     - [Lecture 40](https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture40)
-    - [Lecture 41](https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture40)
+    - [Lecture 41](https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture41)
 
 - Online
     - [JavaScript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
