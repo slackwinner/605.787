@@ -15,7 +15,7 @@ describe('menuService', function () {
       });
     });
   
-    it('should return a valid response if menu exists', function() {
+    it('should return a valid response if menu item exists', function() {
         // Valid input/response variables
         var validMenuCategory = 'FR';
         var validMenuItemNum = '1';
@@ -35,7 +35,7 @@ describe('menuService', function () {
       $httpBackend.flush();
     });
 
-    it('should return an invalid response if menu does not exists', function() {
+    it('should return an invalid response if menu item does not exists', function() {
         // Invalid input/response variables
         var invalidMenuCategory = 'C';
         var invalidMenuItemNum = '53';
